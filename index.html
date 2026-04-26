@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/7.css">
+
+        <style>
+            html,
+            body {
+                height: 100%;
+                overflow: hidden;
+            }
+
+            body {
+                background-image: url('assets/bg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .main-window {
+                position: fixed;
+                left: 40px;
+                top: 80px;
+                width: 420px;
+            }
+
+            .github-window {
+                position: fixed;
+                left: 40px;
+                top: 320px;
+                width: 240px;
+            }
+
+            .github-window .window-body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1px;
+                min-height: 50px;
+            }
+
+            .hero-text {
+                font-size: 56px;
+                font-weight: bold;
+                line-height: 1.1;
+                margin: 20px 0;
+            }
+
+            .about-window {
+                position: fixed;
+                right: 40px; /* anchor to right instead of left */
+                top: 100px;
+                width: 420px;
+            }
+
+            .about-window .window-body {
+                padding: 20px;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="window main-window">
+            <div class="title-bar">
+                <div class="title-bar-text">Welcome To...</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <div class="hero-text">
+                    &nbsp;CODE-A-BOT
+                </div>
+                <div>
+                    <p>&nbsp; &nbsp; By Robert Walsh (South East Technological University)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="window github-window">
+
+            <div class="title-bar">
+                <div class="title-bar-text">GitHub</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <a href="https://github.com/robert-walshh/code-a-bot" target="_blank">
+                    <button class="button">Open on GitHub</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="window about-window">
+
+            <div class="title-bar">
+                <div class="title-bar-text">About</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>
+                    The Code-A-Bot project is a robotics platform designed to help teachers introduce
+                        programming and robotics to young students in a simple and engaging way. It
+                        includes ready to use tools and lesson plans that explore topics like machine learning,
+                        vision systems and telepresence through hands-on activities. Using the Micro:Bit,
+                        beginners can start with visual coding in MakeCode, while more advanced learners
+                        can use MicroPython or JavaScript. The aim is to make STEM learning interactive
+                        and enjoyable from an early age and to show that advanced robotics can be made
+                        accessible to everyone with the right control mechanisms.
+                </p>
+            </div>
+
+        </div>
+
+    </body>
+</html>
